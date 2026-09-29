@@ -1,0 +1,11 @@
+{
+  "name": "mern-stack-example",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "mongodb": "^6.3.0"
+  },
+  "devDependencies": {
+    "@netlify/functions": "^5.0.0"
+  }
+}

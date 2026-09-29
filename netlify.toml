@@ -1,0 +1,16 @@
+[build]
+  command = "npm --prefix mern/client ci && npm --prefix mern/client run build"
+  publish = "mern/client/dist"
+
+[functions]
+  directory = "netlify/functions"
+
+# Client-side routes (React Router) fall back to index.html
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[dev]
+  command = "npm --prefix mern/client run dev"
+  targetPort = 5173
